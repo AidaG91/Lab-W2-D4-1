@@ -61,7 +61,6 @@ textarea:focus {
 }
 
 button {
-    align-items: center;
     background-color:  rgb(222, 226, 214);
     color: rgb(44, 44, 44);
     font-weight: bold;
@@ -74,20 +73,17 @@ button {
 
 }
 
+.button {
+    display: flex;
+    justify-content: center;
+}
 button:hover {
     background-color: rgb(252, 176, 126);
 }
-/* form input:required {
-   content:"*";
+
+/* Lo siguiente es gracias a internet */
+label[for]:has(+ input[required])::after,
+label[for]:has(+ textarea[required])::after {
+  content: " *";
+  color: red;
 }
-.is-required:after {
-  content: '*';
-  margin-left: 3px;
-  color: red;
-  font-weight: bold;
-} */
-/* .form-group input:required~label::before {
-  content: "*";
-  color: red;
-  font-weight: bold;
- } */
